@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>This is a WebPage using Bootstrap 5</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.6.0-web/css/all.min.css">
+    <!-- Bootstrap 5 bundle (includes Popper). jQuery is not required. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/CICD.png" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">My page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hoang Tuan Anh</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Connect</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Carousel -->
+    <div id="slides" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slides" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#slides" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-flex w-100 align-items-center justify-content-center">
+                    <img src="./images/1.jpg" class="img-fluid w-50" alt="left image - cooking">
+                    <img src="./images/2.jpg" class="img-fluid w-50" alt="right image - cooking">
+                </div>
+                <div class="carousel-caption">
+                    <h1 class="display-2">Cooking</h1>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="d-flex w-100 align-items-center justify-content-center">
+                    <img src="./images/3.jpg" class="img-fluid w-50" alt="left image - dish">
+                    <img src="./images/4.jpg" class="img-fluid w-50" alt="right image - dish">
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls (optional) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#slides" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slides" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- jumbotron -->
+    <div class="container-fluid">
+        <!-- Bootstrap 5: .jumbotron removed. Use utilities instead -->
+        <div class="bg-light p-5 rounded-3 mb-4">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-9 col-lg-9 col-xl-10">
+                    <p class="mb-0">I like cooking. Recently I've tried making some Japanese dishes.</p>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 col-xl-2 text-md-end mt-3 mt-md-0">
+                    <a href="#">
+                        <button type="button" class="btn btn-outline-secondary">How about you?</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-12 col-lg-6">
+                <h3>This is the aquascape in my room</h3>
+                <p>I grow aquatic plants and raise baby shrimp.</p>
+                <br>
+            </div>
+            <div class="col-lg-6">
+                <img src="./images/ts1.jpg" class="img-fluid">
+            </div>
+        </div>
+        <hr class="my-4">
+    </div>
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h6 class="display-6">My programming skills</h6>
+            </div>
+            <!-- Horizontal Rule -->
+            <hr>
+            <div class="col-12">
+                <p>
+                    I started learning programming when I transferred to Kyushu University of Information Science in
+                    April 2024.
+                </p>
+                <br>
+                <p>
+                    I have programming knowledge in HTML, CSS, Java, Javascript, Python, PHP, and MySQL.
+                </p>
+                <br>
+                <p>
+                    Currently, I am studying Java Spring Boot for web shop application development.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-12 col-sm-12 col-md-4">
+                <i class="fa-brands fa-html5"></i>
+                <h3>CSS3 , HTML5</h3>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 ">
+                <i class="fa-brands fa-java"></i>
+                <h3>Java</h3>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 ">
+                <i class="fa-brands fa-square-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 ">
+                <i class="fa-brands fa-python"></i>
+                <h3>Python</h3>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 ">
+                <i class="fa-brands fa-php"></i>
+                <h3>PHP</h3>
+            </div>
+        </div>
+        <hr class="my-4">
+    </div>
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-12 col-lg-6">
+                <h3>This is my study corner.</h3>
+                <p>Quite simple, isn't it?</p>
+                <p>I need a new desk and a monitor.</p>
+                <br>
+            </div>
+            <div class="col-lg-6">
+                <img src="./images/gocht.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <hr class="my-2">
+    <button class="fun btn btn-secondary mb-3" data-bs-toggle="collapse" data-bs-target="#emoji" aria-expanded="false"
+        aria-controls="emoji">
+        Click for fun
+    </button>
+    <div id="emoji" class="collapse">
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="./images/gif/cheer.gif" width="100" height="100">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="./images/gif/blinkGirl.gif" width="100" height="100">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="./images/gif/faceHaha.gif" width="100" height="100">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="./images/gif/haha.gif" width="100" height="100">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h6 class="display-6">These are some pictures of me</h6>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid padding mb-5">
+        <div class="row padding">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top profile-img" src="./images/ava1.jpg">
+                    <div class="card-body">
+                        <p class="card-text">This is a picture from when I went for a health check-up.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card ">
+                    <img class="card-img-top profile-img" src="./images/ava2.jpg">
+                    <div class="card-body">
+                        <p class="card-text">This is a picture from when I went mountain climbing.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top profile-img" src="./images/ava3.jpg">
+                    <div class="card-body">
+                        <p class="card-text">This is a picture of me studying.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-12">
+                <h2>Contact me</h2>
+            </div>
+            <div class="col-12 social padding">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <hr class="light">
+                    <p>111-222-3333</p>
+                    <p>z2244507@std.kiis.ac.jp</p>
+                    <p>Fukuoka Japan</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Information</h5>
+                    <hr class="light">
+                    <p>Vietnamese</p>
+                    <p>Fourth-year student</p>
+                    <p>Studying web development</p>
+                    <p>Student of Kyushu University of Information Science</p>
+                </div>
+                <div class="col-12">
+                    <hr class="light-100">
+                    <h5>&copy; My Website</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
