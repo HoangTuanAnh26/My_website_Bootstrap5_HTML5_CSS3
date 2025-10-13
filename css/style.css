@@ -21,17 +21,6 @@ body {
 	color: black !important;
 }
 
-.logo-fallback {
-	background-color: #6a597a;
-	display: inline-block;
-	padding: 6px;
-	border-radius: 4px;
-}
-
-.carousel-inner img {
-	width: 100%;
-}
-
 .carousel-caption {
 	position: absolute;
 	top: 50%;
@@ -43,12 +32,12 @@ body {
 	text-shadow: 5px 5px 15px #000;
 }
 
-.carousel-caption h3 {
+/* .carousel-caption h3 {
 	font-size: 200%;
 	text-shadow: 2px 2px 10px #000;
-}
+} */
 
-.btn-primary {
+/* .btn-primary {
 	background-color: rgb(82, 64, 120);
 	border: 1px solid white;
 }
@@ -61,34 +50,43 @@ body {
 .jumbotron {
 	padding: 1rem;
 	border-radius: 0;
-}
+} */
 
-.welcome hr {
+/* .welcome hr { */
 	/* fixed invalid rgb() with alpha -> rgba() */
-	border-top: 2px solid rgba(62, 44, 100, 0.6);
+	/* border-top: 2px solid rgba(62, 44, 100, 0.6);
 	width: 95%;
 	margin-bottom: 2rem;
-}
+} */
 
-.fa-react {
-	color: #61DBFB;
+.fa-html5 {
+	color: #005A9C;
 	font-size: 200%;
 }
 
-.fa-angular {
-	color: #DD0031;
+.fa-java{
 	font-size: 200%;
+	color: #5382A1
 }
 
-.fa-css3 {
-	color: #d76537;
+.fa-square-js{
 	font-size: 200%;
+	color: #F7DF1E;
+}
+
+.fa-python{
+	font-size: 200%;
+	color: #FFD43B;
+}
+
+.fa-php{
+	font-size: 200%;
+	color: #4F5B93;
 }
 
 /* original selector chained descendants (never matched); changed to list */
-.fa-react, .fa-angular, .fa-css3 {
- 	font-size: 4rem;
- 	margin: 1rem;
+.fa-html5, .fa-java, .fa-square-js, .fa-python, .fa-php {
+	font-size: 1.5rem;
 }
 
 .fun {
